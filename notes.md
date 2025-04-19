@@ -15,5 +15,13 @@ For example, if you choose to use sklearn, in the lib Decision Tree, you can use
 As its name says, this part is about to predict the data. You can use the same lib/software that you used in the fit step. For example, if you used sklearn, you can use the method predict() to predict the data.
 
 ## Evaluate
-Similar to the fit step, you can use the same lib/software that you used in the fit step. For example, if you used sklearn, you can use the method score() to evaluate the data.
+This is a step where we can messure how good is our model. We can use some metrics to evaluate the model. There are many Metrics that we can use.
+
+An example of metrics are: MAE is the Mean Absolute Error.
+
+#### What is Mean Absolute Error (MAE)?
+In the context of machine learning, absolute error refers to the magnitude of difference between the prediction of an observation and the true value of that observation. MAE takes the average of absolute errors for a group of predictions and observations as a measurement of the magnitude of errors for the entire group. MAE can also be referred as L1 loss function.
+
+
+
 

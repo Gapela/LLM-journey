@@ -19,9 +19,36 @@ This is a step where we can messure how good is our model. We can use some metri
 
 An example of metrics are: MAE is the Mean Absolute Error.
 
-#### What is Mean Absolute Error (MAE)?
-In the context of machine learning, absolute error refers to the magnitude of difference between the prediction of an observation and the true value of that observation. MAE takes the average of absolute errors for a group of predictions and observations as a measurement of the magnitude of errors for the entire group. MAE can also be referred as L1 loss function.
+### Example of evaluation metrics:
+We can start with train_test_split() to split the data into train and test sets. Then, we can use the method fit() to fit the data. After that, we can use the method predict() to predict the data. Finally, we can use the method mean_absolute_error() to evaluate the model.
+
+```python
+from sklearn.model_selection import train_test_split
+from sklearn.tree import DecisionTreeRegressor
+from sklearn.metrics import mean_absolute_error
+import pandas as pd
 
 
+# Load the data
+data = pd.read_csv('data.csv')
 
+# Split the data into train and test sets
+X_train, X_test, y_train, y_test = train_test_split(data.drop('target', axis=1), data['target'], test_size=0.2, random_state=42)
+
+# Define the model
+model = DecisionTreeRegressor()
+
+# Fit the model
+model.fit(X_train, y_train)
+
+# Predict the data
+y_pred = model.predict(X_test)
+
+# Evaluate the model
+mae = mean_absolute_error(y_test, y_pred)
+print(f'Mean Absolute Error: {mae}')
+```
+
+### What is MAE?
+MAE is the Mean Absolute Error. It is a measure of how close predictions are to the actual outcomes. It is calculated as the average of the absolute differences between predicted and actual values. The lower the MAE, the better the model's performance.
 

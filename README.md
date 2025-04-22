@@ -29,6 +29,8 @@ We can start with train_test_split() to split the data into train and test sets.
 ### What is MAE?
 MAE is the Mean Absolute Error. It is a measure of how close predictions are to the actual outcomes. It is calculated as the average of the absolute differences between predicted and actual values. The lower the MAE, the better the model's performance.
 
+### Coding example
+
 ``` python
 # ------------------- IMPORT -------------------
 # import the libraries

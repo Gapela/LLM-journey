@@ -34,7 +34,6 @@ MAE is the Mean Absolute Error. It is a measure of how close predictions are to 
 ```python
 # ------------------- IMPORT -------------------
 # import the libraries
-python
 import pandas as pd 
 
 # ------------------- ETL ------------------- 
